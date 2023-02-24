@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Wire Properties">
+        <div class="slds-var-m-around_medium">
+            <lightning-button variant="brand" label="Show Data" onclick={clickHandler}></lightning-button>
+            <template for:each={attendanceColl} for:item="att" >
+                <div key={attDate__c}>
+                    {att.Date__c}
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+
+    
+</template>
